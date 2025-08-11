@@ -4,11 +4,13 @@
     <section class="bg-gradient-to-r from-green-600 to-teal-700 text-white py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 bg-gradient-to-r from-white via-green-100 to-teal-200 bg-clip-text text-transparent leading-tight animate-pulse">
             Mes Expériences
           </h1>
-          <p class="text-xl text-green-100 max-w-2xl mx-auto">
-            Un aperçu de mon parcours professionnel et des projets sur lesquels j'ai travaillé
+          <p class="text-xl md:text-3xl lg:text-4xl text-green-100 max-w-4xl mx-auto font-light tracking-wide">
+            Un aperçu de mon 
+            <span class="font-bold text-white underline decoration-teal-300 decoration-4">parcours professionnel</span> 
+            et des <span class="font-bold text-white underline decoration-green-300 decoration-4">projets</span> sur lesquels j'ai travaillé
           </p>
         </div>
       </div>
@@ -19,7 +21,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-12">
           <!-- Expérience 1 - Cybersécurité -->
-          <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-200">
+          <div class="group bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-red-200 hover:from-red-50 hover:to-pink-50">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div class="lg:col-span-1">
                 <div class="text-sm text-gray-500 mb-2">Période</div>
@@ -30,8 +32,8 @@
                 <div class="font-semibold text-red-600">🔒 Cybersécurité</div>
               </div>
               <div class="lg:col-span-3">
-                <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                  Développeur Full Stack - Solutions Cybersécurité
+                <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                  🔒 Développeur Full Stack - Solutions Cybersécurité
                 </h3>
                 <p class="text-gray-600 mb-4">
                   Développement et maintenance de solutions de cybersécurité pour entreprises TPE/PME et grands groupes. 
@@ -89,7 +91,7 @@
           </div>
 
           <!-- Expérience 2 - E-learning -->
-          <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-200">
+          <div class="group bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-blue-200 hover:from-blue-50 hover:to-indigo-50">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div class="lg:col-span-1">
                 <div class="text-sm text-gray-500 mb-2">Période</div>
@@ -100,8 +102,8 @@
                 <div class="font-semibold text-green-600">📚 E-learning</div>
               </div>
               <div class="lg:col-span-3">
-                <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                  Développeur Full Stack - Plateforme E-learning
+                <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                  📚 Développeur Full Stack - Plateforme E-learning
                 </h3>
                 <p class="text-gray-600 mb-4">
                   Développement d'une plateforme E-learning complète pour entrepreneurs et solopreneurs souhaitant diffuser leurs 
@@ -173,7 +175,7 @@
           </div>
 
           <!-- Expérience 3 - Formation à distance (première expérience) -->
-          <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-200">
+          <div class="group bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-purple-200 hover:from-purple-50 hover:to-violet-50">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div class="lg:col-span-1">
                 <div class="text-sm text-gray-500 mb-2">Période</div>
@@ -184,8 +186,8 @@
                 <div class="font-semibold text-orange-600">🎓 Formation & RH</div>
               </div>
               <div class="lg:col-span-3">
-                <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                  Développeur Full Stack Junior - ERP Formation
+                <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                  🎓 Développeur Full Stack Junior - ERP Formation
                 </h3>
                 <p class="text-gray-600 mb-4">
                   <strong>Première expérience professionnelle</strong> au sein d'une entreprise spécialisée dans les formations à distance 

@@ -1,267 +1,278 @@
 <template>
   <PortfolioLayout>
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">
-            Mes Services
-          </h1>
-          <p class="text-xl text-blue-100 max-w-2xl mx-auto">
-            Des solutions web complètes adaptées à vos besoins et objectifs
-          </p>
+    <SectionContainer 
+      variant="hero" 
+      size="xl" 
+      title="💼 Mes Services"
+      subtitle="Des solutions web complètes et innovantes pour transformer vos idées en succès numérique"
+      :pattern="true"
+    >
+      <div class="flex justify-center mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
+            <div class="text-4xl mb-3">🚀</div>
+            <p class="text-lg font-semibold text-white mb-1">Performance</p>
+            <p class="text-blue-200 text-sm">Applications ultra-rapides</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
+            <div class="text-4xl mb-3">🎨</div>
+            <p class="text-lg font-semibold text-white mb-1">Design</p>
+            <p class="text-blue-200 text-sm">Interfaces modernes</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
+            <div class="text-4xl mb-3">🔒</div>
+            <p class="text-lg font-semibold text-white mb-1">Sécurité</p>
+            <p class="text-blue-200 text-sm">Protection optimale</p>
+          </div>
         </div>
       </div>
-    </section>
+    </SectionContainer>
 
     <!-- Services principaux -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <!-- Service 1 -->
-          <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
-            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+    <SectionContainer 
+      variant="accent" 
+      size="xl" 
+      title="🛠️ Mes Services Principaux"
+      subtitle="Une expertise complète pour donner vie à vos projets web les plus ambitieux"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Service 1 - Développement Full Stack -->
+        <AnimatedCard variant="glass" size="lg" emoji="💻" title="Développement Web Full Stack">
+          <template #icon>
+            <div class="w-16 h-16 bg-gradient-to-r from-blue-100 to-blue-200 rounded-xl flex items-center justify-center">
               <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Développement Web Full Stack
-            </h3>
-            <p class="text-gray-600 mb-6">
-              Création d'applications web complètes avec Laravel et Vue.js. 
-              De la conception à la mise en production, je m'occupe de tous les aspects techniques.
-            </p>
-            <ul class="space-y-2 text-gray-600 mb-6">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          </template>
+          
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            🚀 <strong>Création d'applications web complètes</strong> avec Laravel et Vue.js. 
+            De la conception à la mise en production, je transforme vos idées en <strong>solutions digitales performantes</strong>.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-blue-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Applications web sur mesure
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              </div>
+              <span class="font-semibold group-hover/feature:text-blue-600 transition-colors duration-200">Applications web sur mesure</span>
+            </div>
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-blue-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                APIs REST sécurisées
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              </div>
+              <span class="font-semibold group-hover/feature:text-blue-600 transition-colors duration-200">APIs REST sécurisées</span>
+            </div>
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-blue-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Base de données optimisée
-              </li>
-            </ul>
-            <div class="text-blue-600 font-semibold">À partir de 2500€</div>
+              </div>
+              <span class="font-semibold group-hover/feature:text-blue-600 transition-colors duration-200">Architecture scalable</span>
+            </div>
           </div>
+          
+          <template #action>
+            <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-4">
+              <p class="text-sm font-semibold text-blue-800 mb-1">À partir de 2500€</p>
+              <p class="text-xs text-blue-600">Projet complet avec suivi personnalisé</p>
+            </div>
+          </template>
+        </AnimatedCard>
 
-          <!-- Service 2 -->
-          <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
-            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+        <!-- Service 2 - Interfaces Utilisateur Modernes -->
+        <AnimatedCard variant="glass" size="lg" emoji="🎨" title="Interfaces Utilisateur Modernes">
+          <template #icon>
+            <div class="w-16 h-16 bg-gradient-to-r from-green-100 to-green-200 rounded-xl flex items-center justify-center">
               <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Interfaces Utilisateur Modernes
-            </h3>
-            <p class="text-gray-600 mb-6">
-              Conception et développement d'interfaces utilisateur intuitives et responsives. 
-              Design moderne avec une expérience utilisateur optimale sur tous les appareils.
-            </p>
-            <ul class="space-y-2 text-gray-600 mb-6">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          </template>
+          
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            ✨ <strong>Conception d'interfaces utilisateur intuitives</strong> et responsives. 
+            Design moderne avec une <strong>expérience utilisateur optimale</strong> sur tous les appareils.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-green-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Design responsive
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              </div>
+              <span class="font-semibold group-hover/feature:text-green-600 transition-colors duration-200">Design responsive</span>
+            </div>
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-green-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Accessibilité (WCAG)
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              </div>
+              <span class="font-semibold group-hover/feature:text-green-600 transition-colors duration-200">Accessibilité (WCAG)</span>
+            </div>
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-green-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Performance optimisée
-              </li>
-            </ul>
-            <div class="text-green-600 font-semibold">À partir de 1500€</div>
+              </div>
+              <span class="font-semibold group-hover/feature:text-green-600 transition-colors duration-200">Performance optimisée</span>
+            </div>
           </div>
+          
+          <template #action>
+            <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4">
+              <p class="text-sm font-semibold text-green-800 mb-1">À partir de 1500€</p>
+              <p class="text-xs text-green-600">Design system complet inclus</p>
+            </div>
+          </template>
+        </AnimatedCard>
 
-          <!-- Service 3 -->
-          <div class="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow duration-300">
-            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <!-- Service 3 - Optimisation & Performance -->
+        <AnimatedCard variant="glass" size="lg" emoji="⚡" title="Optimisation & Performance">
+          <template #icon>
+            <div class="w-16 h-16 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-xl flex items-center justify-center">
+              <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Optimisation & Performance
-            </h3>
-            <p class="text-gray-600 mb-6">
-              Amélioration des performances de vos applications existantes. 
-              Audit technique, optimisation du code et mise en place de bonnes pratiques.
-            </p>
-            <ul class="space-y-2 text-gray-600 mb-6">
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          </template>
+          
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            ⚡ <strong>Optimisation de la performance</strong> et amélioration de l'existant. 
+            Audit complet et <strong>solutions sur mesure</strong> pour accélérer vos applications.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-yellow-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Audit de performance
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              </div>
+              <span class="font-semibold group-hover/feature:text-yellow-600 transition-colors duration-200">Audit de performance</span>
+            </div>
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-yellow-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Optimisation SEO
-              </li>
-              <li class="flex items-center">
-                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              </div>
+              <span class="font-semibold group-hover/feature:text-yellow-600 transition-colors duration-200">Optimisation SEO</span>
+            </div>
+            <div class="group/feature flex items-center p-3 rounded-lg hover:bg-yellow-50 transition-all duration-200">
+              <div class="w-6 h-6 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mr-3 group-hover/feature:scale-110 transition-transform duration-200">
+                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Sécurité renforcée
-              </li>
-            </ul>
-            <div class="text-purple-600 font-semibold">À partir de 800€</div>
+              </div>
+              <span class="font-semibold group-hover/feature:text-yellow-600 transition-colors duration-200">Sécurité renforcée</span>
+            </div>
           </div>
-        </div>
+          
+          <template #action>
+            <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg p-4">
+              <p class="text-sm font-semibold text-yellow-800 mb-1">À partir de 800€</p>
+              <p class="text-xs text-yellow-600">Audit détaillé et plan d'action</p>
+            </div>
+          </template>
+        </AnimatedCard>
       </div>
-    </section>
+    </SectionContainer>
 
     <!-- Processus de travail -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Mon Processus de Travail
-          </h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Une approche structurée pour garantir la réussite de votre projet
+    <SectionContainer 
+      variant="accent" 
+      size="xl" 
+      title="🔄 Mon Processus de Travail"
+      subtitle="Une méthode éprouvée pour garantir le succès de votre projet"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Étape 1 -->
+        <AnimatedCard variant="primary" size="md" emoji="🎯" title="1. Analyse">
+          <p class="text-gray-600 leading-relaxed">
+            📋 <strong>Étude approfondie</strong> de vos besoins, objectifs et contraintes techniques pour définir la stratégie optimale.
           </p>
-        </div>
+        </AnimatedCard>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Étape 1 -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
-              1
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Analyse</h3>
-            <p class="text-gray-600">
-              Étude approfondie de vos besoins et définition des objectifs du projet
-            </p>
-          </div>
-
-          <!-- Étape 2 -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
-              2
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Conception</h3>
-            <p class="text-gray-600">
-              Création de maquettes et définition de l'architecture technique
-            </p>
-          </div>
-
-          <!-- Étape 3 -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
-              3
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Développement</h3>
-            <p class="text-gray-600">
-              Implémentation avec suivi régulier et tests continus
-            </p>
-          </div>
-
-          <!-- Étape 4 -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
-              4
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Livraison</h3>
-            <p class="text-gray-600">
-              Mise en production et accompagnement post-lancement
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Questions Fréquentes
-          </h2>
-          <p class="text-lg text-gray-600">
-            Réponses aux questions les plus courantes
+        <!-- Étape 2 -->
+        <AnimatedCard variant="success" size="md" emoji="✏️" title="2. Conception">
+          <p class="text-gray-600 leading-relaxed">
+            🎨 <strong>Design et architecture</strong> de la solution avec maquettes interactives et validation de l'expérience utilisateur.
           </p>
-        </div>
+        </AnimatedCard>
 
-        <div class="space-y-6">
-          <!-- FAQ 1 -->
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">
-              Quels sont vos délais de livraison ?
-            </h3>
-            <p class="text-gray-600">
-              Les délais varient selon la complexité du projet. Un site vitrine peut être livré en 2-3 semaines, 
-              tandis qu'une application complexe peut nécessiter 2-3 mois. Je fournis toujours un planning détaillé.
-            </p>
-          </div>
+        <!-- Étape 3 -->
+        <AnimatedCard variant="warning" size="md" emoji="⚙️" title="3. Développement">
+          <p class="text-gray-600 leading-relaxed">
+            💻 <strong>Implémentation technique</strong> avec suivi régulier, tests continus et livraisons par étapes.
+          </p>
+        </AnimatedCard>
 
-          <!-- FAQ 2 -->
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">
-              Proposez-vous un suivi après livraison ?
-            </h3>
-            <p class="text-gray-600">
-              Oui, j'inclus toujours une période de garantie et de support. Je propose également des contrats 
-              de maintenance pour assurer la sécurité et les mises à jour de votre application.
-            </p>
-          </div>
-
-          <!-- FAQ 3 -->
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">
-              Travaillez-vous avec des équipes existantes ?
-            </h3>
-            <p class="text-gray-600">
-              Absolument ! Je peux m'intégrer à votre équipe technique existante ou collaborer avec vos 
-              designers et chefs de projet. J'ai l'habitude du travail en équipe et des méthodologies agiles.
-            </p>
-          </div>
-        </div>
+        <!-- Étape 4 -->
+        <AnimatedCard variant="secondary" size="md" emoji="🚀" title="4. Déploiement">
+          <p class="text-gray-600 leading-relaxed">
+            🌐 <strong>Mise en production</strong> sécurisée avec formation, documentation et support technique inclus.
+          </p>
+        </AnimatedCard>
       </div>
-    </section>
+    </SectionContainer>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-blue-600">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">
-          Prêt à démarrer votre projet ?
-        </h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          Contactez-moi pour discuter de vos besoins et obtenir un devis personnalisé
-        </p>
-        <Link
-          :href="route('contact')"
-          class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+    <SectionContainer 
+      variant="hero" 
+      size="lg" 
+      title="🚀 Prêt à démarrer votre projet ?"
+      subtitle="Discutons ensemble de vos besoins et transformons vos idées en réalité numérique"
+    >
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mt-8">
+        <Link 
+          :href="route('contact')" 
+          class="group bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 flex items-center space-x-3"
         >
-          Demander un devis
+          <span>💬 Discutons de votre projet</span>
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
         </Link>
+        
+        <div class="text-center text-blue-600">
+          <p class="text-sm opacity-90 mb-2">📞 Ou appelez-moi directement</p>
+          <p class="font-bold text-lg">+33 6 60 93 99 30</p>
+        </div>
       </div>
-    </section>
+      
+      <!-- Statistiques -->
+      <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
+        <div class="text-center text-white">
+          <div class="text-4xl font-black mb-2 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">50+</div>
+          <p class="text-blue-200">Projets réalisés</p>
+        </div>
+        <div class="text-center text-white">
+          <div class="text-4xl font-black mb-2 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">98%</div>
+          <p class="text-blue-200">Clients satisfaits</p>
+        </div>
+        <div class="text-center text-white">
+          <div class="text-4xl font-black mb-2 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">24h</div>
+          <p class="text-blue-200">Temps de réponse</p>
+        </div>
+      </div> -->
+    </SectionContainer>
   </PortfolioLayout>
 </template>
 
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3'
 import PortfolioLayout from '@/layouts/PortfolioLayout.vue'
+import SectionContainer from '@/components/ui/SectionContainer.vue'
+import AnimatedCard from '@/components/ui/AnimatedCard.vue'
 </script>

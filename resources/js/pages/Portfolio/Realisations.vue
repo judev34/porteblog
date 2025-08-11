@@ -4,11 +4,13 @@
     <section class="bg-gradient-to-r from-purple-600 to-pink-700 text-white py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 bg-gradient-to-r from-white via-purple-100 to-pink-200 bg-clip-text text-transparent leading-tight animate-pulse">
             Mes Réalisations
           </h1>
-          <p class="text-xl text-purple-100 max-w-2xl mx-auto">
-            Découvrez une sélection de projets que j'ai développés avec passion et expertise
+          <p class="text-xl md:text-3xl lg:text-4xl text-purple-100 max-w-4xl mx-auto font-light tracking-wide">
+            Découvrez une sélection de 
+            <span class="font-bold text-white underline decoration-pink-300 decoration-4">projets</span> 
+            que j'ai développés avec <span class="font-bold text-white underline decoration-purple-300 decoration-4">passion</span> et expertise
           </p>
         </div>
       </div>
@@ -19,7 +21,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <!-- Projet 1 - Portfolio Personnel -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-purple-200">
             <div class="h-64 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center relative">
               <div class="text-white text-center">
                 <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,8 +36,8 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                Portfolio Développeur Full Stack
+              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                🚀 Portfolio Développeur Full Stack
               </h3>
               <p class="text-gray-600 mb-4">
                 Portfolio personnel moderne et responsive développé avec Laravel 12 et Vue 3. 
@@ -88,8 +90,8 @@
           </div>
 
           <!-- Projet 2 - À personnaliser -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <div class="h-64 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-green-200">
+            <div class="h-64 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center group-hover:from-green-600 group-hover:to-teal-700 transition-all duration-300">
               <div class="text-white text-center">
                 <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
@@ -98,8 +100,8 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                Dashboard Analytics
+              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                🛍️ Application E-commerce
               </h3>
               <p class="text-gray-600 mb-4">
                 Interface de visualisation de données avec graphiques interactifs, tableaux de bord personnalisables 
@@ -133,8 +135,8 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                Plateforme de Formation
+              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                📚 Plateforme de Formation
               </h3>
               <p class="text-gray-600 mb-4">
                 Système de gestion d'apprentissage (LMS) avec cours en ligne, suivi de progression, 
@@ -158,8 +160,8 @@
           </div>
 
           <!-- Projet 4 - À personnaliser -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <div class="h-64 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-indigo-200">
+            <div class="h-64 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center group-hover:from-indigo-600 group-hover:to-purple-700 transition-all duration-300">
               <div class="text-white text-center">
                 <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
@@ -168,8 +170,8 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-3">
-                Application de Chat
+              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                💬 Plateforme de Chat
               </h3>
               <p class="text-gray-600 mb-4">
                 Application de messagerie en temps réel avec salles de discussion, partage de fichiers, 
