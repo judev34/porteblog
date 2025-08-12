@@ -88,11 +88,12 @@ jobs:
         chmod -R 755 deploy/storage
         chmod -R 755 deploy/bootstrap/cache
         
-        # Corriger les chemins dans index.php pour Hostinger
-        # Les fichiers Laravel sont à la racine, public_html contient index.php
-        # Donc les chemins ../ sont corrects
+        # Adapter index.php pour l'architecture Hostinger mutualisé
+        # Le projet Laravel sera dans /laravel, public_html contiendra index.php
+        sed -i "s|__DIR__.'/../vendor/autoload.php'|__DIR__.'/../laravel/vendor/autoload.php'|g" deploy/public/index.php
+        sed -i "s|__DIR__.'/../bootstrap/app.php'|__DIR__.'/../laravel/bootstrap/app.php'|g" deploy/public/index.php
         
-    - name: Deploy Laravel app files (non-public)
+    - name: Deploy Laravel app files to /laravel
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -100,7 +101,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./deploy/
-        server-dir: /
+        server-dir: /laravel/
         dangerous-clean-slate: true
         exclude: |
           **/public/**
@@ -111,7 +112,7 @@ jobs:
           **/.env.example
           **/README.md
           
-    - name: Deploy Laravel public files
+    - name: Clean and deploy to public_html
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
