@@ -22,10 +22,10 @@
           <div class="flex-shrink-0">
             <Link :href="route('home')" class="group flex items-center space-x-2">
               <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                <span class="text-white font-black text-lg">MP</span>
+                <span class="text-white font-black text-lg">CJ</span>
               </div>
               <span class="text-xl font-black bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
-                Mon Portfolio
+                CJ develop
               </span>
             </Link>
           </div>

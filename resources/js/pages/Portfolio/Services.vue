@@ -3,30 +3,12 @@
     <!-- Hero Section -->
     <SectionContainer 
       variant="hero" 
-      size="xl" 
+      size="md" 
       title="💼 Mes Services"
       subtitle="Des solutions web complètes et innovantes pour transformer vos idées en succès numérique"
       :pattern="true"
     >
-      <div class="flex justify-center mt-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
-            <div class="text-4xl mb-3">🚀</div>
-            <p class="text-lg font-semibold text-white mb-1">Performance</p>
-            <p class="text-blue-200 text-sm">Applications ultra-rapides</p>
-          </div>
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
-            <div class="text-4xl mb-3">🎨</div>
-            <p class="text-lg font-semibold text-white mb-1">Design</p>
-            <p class="text-blue-200 text-sm">Interfaces modernes</p>
-          </div>
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
-            <div class="text-4xl mb-3">🔒</div>
-            <p class="text-lg font-semibold text-white mb-1">Sécurité</p>
-            <p class="text-blue-200 text-sm">Protection optimale</p>
-          </div>
-        </div>
-      </div>
+      
     </SectionContainer>
 
     <!-- Services principaux -->
@@ -79,12 +61,12 @@
             </div>
           </div>
           
-          <template #action>
+          <!-- <template #action>
             <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-4">
               <p class="text-sm font-semibold text-blue-800 mb-1">À partir de 2500€</p>
               <p class="text-xs text-blue-600">Projet complet avec suivi personnalisé</p>
             </div>
-          </template>
+          </template> -->
         </AnimatedCard>
 
         <!-- Service 2 - Interfaces Utilisateur Modernes -->
@@ -129,12 +111,12 @@
             </div>
           </div>
           
-          <template #action>
+          <!-- <template #action>
             <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4">
               <p class="text-sm font-semibold text-green-800 mb-1">À partir de 1500€</p>
               <p class="text-xs text-green-600">Design system complet inclus</p>
             </div>
-          </template>
+          </template> -->
         </AnimatedCard>
 
         <!-- Service 3 - Optimisation & Performance -->
@@ -179,12 +161,12 @@
             </div>
           </div>
           
-          <template #action>
+          <!-- <template #action>
             <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg p-4">
               <p class="text-sm font-semibold text-yellow-800 mb-1">À partir de 800€</p>
               <p class="text-xs text-yellow-600">Audit détaillé et plan d'action</p>
             </div>
-          </template>
+          </template> -->
         </AnimatedCard>
       </div>
     </SectionContainer>
@@ -230,7 +212,7 @@
     <!-- CTA Section -->
     <SectionContainer 
       variant="hero" 
-      size="lg" 
+      size="md" 
       title="🚀 Prêt à démarrer votre projet ?"
       subtitle="Discutons ensemble de vos besoins et transformons vos idées en réalité numérique"
     >
