@@ -82,6 +82,10 @@ jobs:
         chmod -R 755 deploy/storage
         chmod -R 755 deploy/bootstrap/cache
         
+        # Corriger les chemins dans index.php pour Hostinger
+        # Les fichiers Laravel sont à la racine, public_html contient index.php
+        # Donc les chemins ../ sont corrects
+        
     - name: Deploy Laravel app files (non-public)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
@@ -115,6 +119,23 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
+          
+    - name: Install dependencies on server via SSH
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 65002
+        script: |
+          cd ~/
+          composer install --no-dev --optimize-autoloader
+          composer dump-autoload --optimize
+          php artisan config:clear
+          php artisan config:cache
+          php artisan route:cache
+          php artisan view:cache
+          php artisan optimize
           **/tests/**
           **/.env.example
           **/README.md
