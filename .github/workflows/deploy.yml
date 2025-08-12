@@ -96,6 +96,7 @@ jobs:
         port: 21
         local-dir: ./deploy/
         server-dir: /
+        dangerous-clean-slate: true
         exclude: |
           **/public/**
           **/.git*
@@ -114,6 +115,7 @@ jobs:
         port: 21
         local-dir: ./deploy/public/
         server-dir: /public_html/
+        dangerous-clean-slate: true
         exclude: |
           **/.git*
           **/.git*/**
