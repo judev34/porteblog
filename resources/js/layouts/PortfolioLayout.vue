@@ -193,10 +193,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { Link, usePage } from '@inertiajs/vue3'
+import { Link } from '@inertiajs/vue3'
 import { route } from 'ziggy-js'
-
-const page = usePage()
 
 // Navigation state
 const scrollProgress = ref(0)
@@ -211,16 +209,7 @@ const updateScrollProgress = () => {
   isScrolled.value = scrollTop > 50
 }
 
-// Smooth scroll to section
-const scrollToSection = (sectionId: string) => {
-  const element = document.getElementById(sectionId)
-  if (element) {
-    element.scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
-    })
-  }
-}
+// Smooth scroll to section (function removed as unused)
 
 // Lifecycle hooks
 onMounted(() => {
