@@ -14,12 +14,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.2'
-        extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, dom, filter, gd, iconv, json, mbstring, pdo
-
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
@@ -32,6 +26,7 @@ jobs:
         # Configuration pour production sans base de données
         echo "APP_ENV=production" >> .env
         echo "APP_DEBUG=false" >> .env
+        echo "APP_URL=https://cjdevelop.fr" >> .env
         echo "SESSION_DRIVER=file" >> .env
         echo "LOG_CHANNEL=single" >> .env
 
