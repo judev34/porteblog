@@ -7,6 +7,31 @@ import { createApp, h } from 'vue';
 import { ZiggyVue } from 'ziggy-js';
 import { initializeTheme } from './composables/useAppearance';
 
+// FontAwesome imports
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+// Import des icônes spécifiques pour la section Technologies
+import { 
+    faDatabase,
+    faCode
+} from '@fortawesome/free-solid-svg-icons';
+
+import { 
+    faLaravel,
+    faVuejs,
+    faGitAlt,
+    faCss3Alt
+} from '@fortawesome/free-brands-svg-icons';
+
+// Ajouter les icônes à la bibliothèque
+library.add(
+    // Solid icons
+    faDatabase, faCode,
+    // Brand icons
+    faLaravel, faVuejs, faGitAlt, faCss3Alt
+);
+
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -16,6 +41,7 @@ createInertiaApp({
         createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
+            .component('FontAwesomeIcon', FontAwesomeIcon)
             .mount(el);
     },
     progress: {
