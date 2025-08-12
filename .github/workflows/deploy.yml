@@ -70,7 +70,8 @@ jobs:
           --exclude .gitignore \
           --exclude .gitattributes \
           --exclude phpunit.xml \
-          --exclude package-lock.json
+          --exclude package-lock.json \
+          --exclude vendor
         
         # Créer les dossiers de storage nécessaires
         mkdir -p deploy/storage/logs
