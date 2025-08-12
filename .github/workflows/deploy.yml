@@ -71,7 +71,11 @@ jobs:
           --exclude .gitattributes \
           --exclude phpunit.xml \
           --exclude package-lock.json \
-          --exclude vendor
+          --exclude vendor \
+          --exclude .windsurf \
+          --exclude database/migrations \
+          --exclude database/seeders \
+          --exclude database/factories
         
         # Créer les dossiers de storage nécessaires
         mkdir -p deploy/storage/logs
@@ -91,7 +95,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./deploy/
-        server-dir: ./public_html/
+        server-dir: /public_html/
         exclude: |
           **/.git*
           **/.git*/**
