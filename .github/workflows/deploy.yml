@@ -87,7 +87,7 @@ jobs:
         chmod -R 755 deploy/storage
         chmod -R 755 deploy/bootstrap/cache
         
-    - name: Deploy to FTP
+    - name: Deploy Laravel app files (non-public)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -95,6 +95,24 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         local-dir: ./deploy/
+        server-dir: /
+        exclude: |
+          **/public/**
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/tests/**
+          **/.env.example
+          **/README.md
+          
+    - name: Deploy Laravel public files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
+        local-dir: ./deploy/public/
         server-dir: /public_html/
         exclude: |
           **/.git*
