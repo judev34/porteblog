@@ -3,18 +3,11 @@
     <!-- Hero Section -->
     <SectionContainer 
       variant="hero" 
-      size="xl" 
+      size="md" 
       title="Mon Parcours"
-      subtitle="Découvrez mon évolution professionnelle et ma passion grandissante pour le développement web moderne"
+      subtitle="Découvrez mon évolution professionnelle"
       :pattern="true"
     >
-      <div class="flex justify-center mt-12">
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center hover:scale-105 transition-all duration-500">
-          <div class="text-6xl mb-4">🚀</div>
-          <p class="text-xl font-semibold text-white mb-2">3+ Années d'Expérience</p>
-          <p class="text-indigo-200">De débutant passionné à développeur full-stack</p>
-        </div>
-      </div>
     </SectionContainer>
 
     <!-- Timeline Section -->
@@ -140,79 +133,110 @@
       variant="accent" 
       size="xl" 
       title="🛠️ Mes Compétences Techniques"
-      subtitle="Un arsenal technologique moderne pour créer des solutions web performantes et innovantes"
+      subtitle=""
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Frontend -->
-        <AnimatedCard variant="primary" size="lg" emoji="🎨" title="Frontend Moderne">
+        <AnimatedCard variant="primary" size="lg" emoji="🎨" title="Frontend">
           <template #icon>
-            <div class="w-16 h-16 bg-gradient-to-r from-blue-100 to-blue-200 rounded-xl flex items-center justify-center">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-12 h-12 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
             </div>
           </template>
           
-          <div class="space-y-4">
-            <div class="flex flex-wrap gap-2">
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Vue.js 3 🚀</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">JavaScript/jQuery ⚡</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">HTML5/CSS3 🎨</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">SASS/SCSS 🌈</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Bootstrap 📱</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">TypeScript 🔥</span>
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">Vue.js 3</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">TypeScript</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">JavaScript</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">jQuery</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">AJAX</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">HTML5</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">CSS3</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">SASS/SCSS</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">Bootstrap</span>
+              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">TailwindCSS</span>
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              🎨 <strong>Interfaces modernes</strong> et responsive design avec maîtrise complète des technologies frontend actuelles.
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Interfaces modernes et responsive avec Vue.js 3 et TypeScript
             </p>
           </div>
         </AnimatedCard>
 
         <!-- Backend -->
-        <AnimatedCard variant="success" size="lg" emoji="🛠️" title="Backend Robuste">
+        <AnimatedCard variant="success" size="lg" emoji="🛠️" title="Backend">
           <template #icon>
-            <div class="w-16 h-16 bg-gradient-to-r from-green-100 to-green-200 rounded-xl flex items-center justify-center">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-12 h-12 bg-gradient-to-r from-green-100 to-green-200 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"></path>
               </svg>
             </div>
           </template>
-          <div class="space-y-4">
-            <div class="flex flex-wrap gap-2">
-              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Laravel/Symfony 🚀</span>
-              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">PHP 7/8 💪</span>
-              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">MySQL/PostgreSQL 🗄️</span>
-              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">API REST 🔌</span>
-              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Doctrine ORM 📊</span>
-              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Twig 🎨</span>
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">PHP 7/8</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">Symfony</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">Laravel</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">Doctrine ORM</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">Twig</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">API REST</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">POO</span>
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              🏗️ <strong>Architecture solide</strong> et sécurisée pour des applications performantes et évolutives.
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Architecture robuste avec Symfony/Laravel et bonnes pratiques POO
             </p>
           </div>
         </AnimatedCard>
 
-        <!-- DevOps -->
+        <!-- Base de données -->
+        <AnimatedCard variant="secondary" size="lg" emoji="🗄️" title="Base de données">
+          <template #icon>
+            <div class="w-12 h-12 bg-gradient-to-r from-purple-100 to-purple-200 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+              </svg>
+            </div>
+          </template>
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-2 py-1 rounded text-xs font-medium">MySQL</span>
+              <span class="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-2 py-1 rounded text-xs font-medium">PostgreSQL</span>
+              <span class="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-2 py-1 rounded text-xs font-medium">Redis</span>
+              <span class="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-2 py-1 rounded text-xs font-medium">Doctrine</span>
+              <span class="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 px-2 py-1 rounded text-xs font-medium">SQL</span>
+            </div>
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Gestion de données relationnelles et optimisation des requêtes
+            </p>
+          </div>
+        </AnimatedCard>
+
+        <!-- DevOps & Outils -->
         <AnimatedCard variant="warning" size="lg" emoji="⚙️" title="DevOps & Outils">
           <template #icon>
-            <div class="w-16 h-16 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-xl flex items-center justify-center">
-              <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-12 h-12 bg-gradient-to-r from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
             </div>
           </template>
-          <div class="space-y-4">
-            <div class="flex flex-wrap gap-2">
-              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Git/GitHub 🌿</span>
-              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Docker 🐳</span>
-              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Trello/Jira 📋</span>
-              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Tests Unitaires ✅</span>
-              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">XAMPP 🔧</span>
-              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-3 py-1 rounded-lg text-sm font-semibold hover:scale-105 transition-transform duration-200">Figma/Canva 🎨</span>
+          <div class="space-y-3">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Git/GitHub</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">GitLab</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Docker</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Linux/MacOS</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">XAMPP</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Trello</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Figma</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Canva</span>
+              <span class="bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 px-2 py-1 rounded text-xs font-medium">Office365</span>
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              🔧 <strong>Automatisation</strong> et déploiement continu pour une productivité maximale.
+            <p class="text-gray-600 text-xs leading-relaxed">
+              Environnement de développement et outils de collaboration
             </p>
           </div>
         </AnimatedCard>

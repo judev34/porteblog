@@ -89,37 +89,81 @@
             </div>
           </div>
 
-          <!-- Projet 2 - À personnaliser -->
-          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-green-200">
-            <div class="h-64 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center group-hover:from-green-600 group-hover:to-teal-700 transition-all duration-300">
-              <div class="text-white text-center">
+          <!-- Projet 2 - Montpellier-Parkings -->
+          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-blue-200">
+            <div class="h-64 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center group-hover:from-blue-600 group-hover:to-indigo-700 transition-all duration-300 relative overflow-hidden">
+              <div class="text-white text-center z-10">
                 <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
                 </svg>
-                <p class="text-lg font-semibold">Capture d'écran à venir</p>
+                <p class="text-lg font-semibold">Application Temps Réel</p>
+              </div>
+              <div class="absolute top-4 right-4">
+                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  🚀 En Production
+                </span>
+              </div>
+              <!-- Effet de fond animé -->
+              <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-4 left-4 w-8 h-8 bg-white rounded-full animate-pulse"></div>
+                <div class="absolute top-12 right-8 w-4 h-4 bg-white rounded-full animate-ping"></div>
+                <div class="absolute bottom-8 left-8 w-6 h-6 bg-white rounded-full animate-bounce"></div>
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
-                🛍️ Application E-commerce
+              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                🅿️ Montpellier-Parkings
               </h3>
               <p class="text-gray-600 mb-4">
-                Interface de visualisation de données avec graphiques interactifs, tableaux de bord personnalisables 
-                et système de reporting avancé. Optimisé pour les performances et l'expérience utilisateur.
+                Application web moderne affichant en temps réel la disponibilité des places de parking 
+                à Montpellier. Interface intuitive et responsive utilisant les données ouvertes de 
+                Montpellier Méditerranée Métropole pour aider les automobilistes à trouver rapidement 
+                une place disponible.
               </p>
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Fonctionnalités principales :</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• <strong>Données temps réel</strong> : Affichage instantané des places disponibles</li>
+                  <li>• <strong>24 parkings référencés</strong> : Couverture complète du centre-ville</li>
+                  <li>• <strong>Interface responsive</strong> : Optimisée mobile, tablette et desktop</li>
+                  <li>• <strong>Géolocalisation</strong> : Localisation des parkings sur carte interactive</li>
+                  <li>• <strong>Données officielles</strong> : API Montpellier Méditerranée Métropole</li>
+                  <li>• <strong>Support communautaire</strong> : Système de dons PayPal et Tipeee</li>
+                </ul>
+              </div>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
-                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Chart.js</span>
-                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Laravel</span>
-                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">API REST</span>
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Vue 3</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Pinia</span>
+                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm">API REST</span>
+                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Responsive</span>
+                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">PWA</span>
+              </div>
+              <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded mb-4">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm text-blue-700">
+                      <strong>Impact</strong> - Service public numérique aidant quotidiennement les automobilistes 
+                      montpelliérains à optimiser leur recherche de stationnement et réduire la circulation.
+                    </p>
+                  </div>
+                </div>
               </div>
               <div class="flex space-x-4">
-                <a href="#" class="text-green-600 hover:text-green-800 font-semibold">
+                <a href="https://montpellier-parkings.fr" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1">
                   Voir le projet →
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
                 </a>
-                <a href="#" class="text-gray-500 hover:text-gray-700">
-                  Code source
-                </a>
+                <span class="text-gray-500">
+                  Code source privé
+                </span>
               </div>
             </div>
           </div>
@@ -212,13 +256,13 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
           <div class="text-center">
             <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <span class="text-red-600 font-bold text-lg">L</span>
+              
             </div>
             <p class="text-gray-700 font-medium">Laravel</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <span class="text-green-600 font-bold text-lg">V</span>
+              
             </div>
             <p class="text-gray-700 font-medium">Vue.js</p>
           </div>
