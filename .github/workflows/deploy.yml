@@ -119,23 +119,3 @@ jobs:
           **/.git*
           **/.git*/**
           **/node_modules/**
-          
-    - name: Install dependencies on server via SSH
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        port: 65002
-        script: |
-          cd ~/
-          composer install --no-dev --optimize-autoloader
-          composer dump-autoload --optimize
-          php artisan config:clear
-          php artisan config:cache
-          php artisan route:cache
-          php artisan view:cache
-          php artisan optimize
-          **/tests/**
-          **/.env.example
-          **/README.md
