@@ -256,37 +256,37 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
           <div class="text-center">
             <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              
+              <FontAwesomeIcon :icon="['fab', 'laravel']" class="text-red-600 text-2xl" />
             </div>
             <p class="text-gray-700 font-medium">Laravel</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              
+              <FontAwesomeIcon :icon="['fab', 'vuejs']" class="text-green-600 text-2xl" />
             </div>
             <p class="text-gray-700 font-medium">Vue.js</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <span class="text-blue-600 font-bold text-lg">TS</span>
+              <FontAwesomeIcon icon="code" class="text-blue-600 text-2xl" />
             </div>
             <p class="text-gray-700 font-medium">TypeScript</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-cyan-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <span class="text-cyan-600 font-bold text-lg">T</span>
+              <FontAwesomeIcon :icon="['fab', 'css3-alt']" class="text-cyan-600 text-2xl" />
             </div>
             <p class="text-gray-700 font-medium">TailwindCSS</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <span class="text-orange-600 font-bold text-lg">M</span>
+              <FontAwesomeIcon icon="database" class="text-orange-600 text-2xl" />
             </div>
             <p class="text-gray-700 font-medium">MySQL</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-              <span class="text-gray-600 font-bold text-lg">G</span>
+              <FontAwesomeIcon :icon="['fab', 'git-alt']" class="text-gray-600 text-2xl" />
             </div>
             <p class="text-gray-700 font-medium">Git</p>
           </div>
