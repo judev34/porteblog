@@ -102,7 +102,7 @@ jobs:
         port: 21
         local-dir: ./deploy/
         server-dir: /laravel/
-        dangerous-clean-slate: true
+        dangerous-clean-slate: false
         exclude: |
           **/public/**
           **/.git*

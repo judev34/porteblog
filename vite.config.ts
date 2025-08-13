@@ -9,6 +9,7 @@ export default defineConfig({
             input: ['resources/js/app.ts'],
             // ssr: 'resources/js/ssr.ts', // Désactivé temporairement pour production
             refresh: true,
+            buildDirectory: 'build', // Dossier de build dans public/
         }),
         tailwindcss(),
         vue({
