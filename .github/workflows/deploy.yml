@@ -106,16 +106,17 @@ jobs:
           **/.env.example
           **/README.md
           
+    - name: Install sshpass
+      run: sudo apt-get update && sudo apt-get install -y sshpass
+      
     - name: Run Laravel optimization commands
-      uses: SamKirkland/web-deploy@v1
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        port: 21
-        command: |
-          cd /laravel
+      run: |
+        # Se connecter en SSH et exécuter les commandes Laravel
+        sshpass -p "${{ secrets.SSPASS }}" ssh -o StrictHostKeyChecking=no -p 65002 ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_SERVER }} << 'EOF'
+          cd /home/u303995730/domains/cjdevelop.fr/laravel
           ./composer2 install --no-dev --optimize-autoloader
           php artisan config:cache
           php artisan route:cache
           php artisan view:cache
+          echo "Laravel optimization completed!"
+        EOF
