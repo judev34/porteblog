@@ -106,3 +106,16 @@ jobs:
           **/.env.example
           **/README.md
           
+    - name: Run Laravel optimization commands
+      uses: SamKirkland/web-deploy@v1
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
+        command: |
+          cd /laravel
+          ./composer2 install --no-dev --optimize-autoloader
+          php artisan config:cache
+          php artisan route:cache
+          php artisan view:cache
