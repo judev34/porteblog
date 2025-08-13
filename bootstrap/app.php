@@ -25,12 +25,3 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
-
-// Configuration pour Hostinger : utiliser public_html au lieu de public
-if ($app->environment('production')) {
-    $app->bind('path.public', function() {
-        return base_path('../public_html');
-    });
-}
-
-return $app;
