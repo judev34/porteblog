@@ -12,7 +12,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Configuration pour Hostinger : utiliser public_html au lieu de public
+        if (app()->environment('production')) {
+            $this->app->bind('path.public', function() {
+                return base_path('../public_html');
+            });
+        }
     }
 
     /**
@@ -20,13 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Configuration Vite pour structure Hostinger
-        if (app()->environment('production')) {
-            $hostingPath = env('HOSTING_PATH');
-            $buildPath = $hostingPath . '/public_html/build';
-            
-            Vite::useManifestFilename($buildPath . '/manifest.json');
-            Vite::useBuildDirectory($buildPath);
-        }
+        //
     }
 }
