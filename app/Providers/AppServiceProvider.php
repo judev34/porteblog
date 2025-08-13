@@ -22,8 +22,11 @@ class AppServiceProvider extends ServiceProvider
     {
         // Configuration Vite pour structure Hostinger
         if (app()->environment('production')) {
-            Vite::useManifestFilename('../public_html/build/manifest.json');
-            Vite::useBuildDirectory('../public_html/build');
+            $hostingPath = env('HOSTING_PATH');
+            $buildPath = $hostingPath . '/public_html/build';
+            
+            Vite::useManifestFilename($buildPath . '/manifest.json');
+            Vite::useBuildDirectory($buildPath);
         }
     }
 }
