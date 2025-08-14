@@ -90,7 +90,7 @@ jobs:
       with:
         server: ${{ secrets.PREPROD_FTP_SERVER }}
         username: ${{ secrets.PREPROD_FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        password: ${{ secrets.PREPROD_FTP_PASSWORD }}
         port: 21
         local-dir: ./deploy/
         server-dir: /laravel/
