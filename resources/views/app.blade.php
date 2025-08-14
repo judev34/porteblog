@@ -32,7 +32,7 @@
 
         <title inertia>{{ config('app.name', 'CJ DEVELOP') }}</title>
 
-        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" href="/logo_icon.png" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="logo-icon" href="/logo_icon.png">
 
