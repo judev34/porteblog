@@ -102,3 +102,4 @@ jobs:
           **/tests/**
           **/.env.example
           **/README.md
+          **/public/.htaccess
