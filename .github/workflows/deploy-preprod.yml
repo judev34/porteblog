@@ -28,7 +28,7 @@ jobs:
 
     - name: Create preprod .env
       run: |
-        cp .env.preprod .env
+        cp .env.example .env
         # Configuration pour préproduction
         sed -i 's/APP_ENV=local/APP_ENV=staging/' .env
         sed -i 's/APP_DEBUG=true/APP_DEBUG=true/' .env
