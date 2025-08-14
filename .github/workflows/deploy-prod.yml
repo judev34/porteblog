@@ -1,0 +1,108 @@
+name: Deploy to Production (master)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, dom, filter, gd, iconv, json, mbstring, pdo
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.18.0'
+        cache: 'npm'
+
+    - name: Create production .env
+      run: |
+        cp .env.example .env
+        # Configuration pour production sans base de données (remplacer au lieu d'ajouter)
+        sed -i 's/APP_ENV=local/APP_ENV=production/' .env
+        sed -i 's/APP_DEBUG=true/APP_DEBUG=false/' .env
+        sed -i 's|APP_URL=http://localhost|APP_URL=${{ secrets.PROD_URL }}|' .env
+        sed -i 's/SESSION_DRIVER=database/SESSION_DRIVER=file/' .env
+        sed -i 's/LOG_CHANNEL=stack/LOG_CHANNEL=single/' .env
+
+    - name: Install PHP Dependencies
+      run: composer install --no-dev --optimize-autoloader
+
+    - name: Install Node Dependencies
+      run: npm ci
+
+    - name: Generate key
+      run: php artisan key:generate
+      
+    - name: Optimize Laravel for production
+      run: |
+        php artisan config:cache
+        php artisan route:cache
+        php artisan view:cache
+
+    - name: Build assets
+      run: npm run build
+
+    - name: Create deployment archive
+      run: |
+        # Créer un dossier temporaire pour le déploiement
+        mkdir -p deploy
+        
+        # Copier les fichiers nécessaires (exclure les dossiers de développement)
+        rsync -av --progress . deploy/ \
+          --exclude node_modules \
+          --exclude .git \
+          --exclude .github \
+          --exclude tests \
+          --exclude storage/logs \
+          --exclude .env.example \
+          --exclude README.md \
+          --exclude .gitignore \
+          --exclude .gitattributes \
+          --exclude phpunit.xml \
+          --exclude package-lock.json \
+          --exclude vendor \
+          --exclude .windsurf \
+          --exclude database/migrations \
+          --exclude database/seeders \
+          --exclude database/factories
+        
+        # Créer les dossiers de storage nécessaires
+        mkdir -p deploy/storage/logs
+        mkdir -p deploy/storage/framework/cache
+        mkdir -p deploy/storage/framework/sessions
+        mkdir -p deploy/storage/framework/views
+        
+        # Définir les permissions
+        chmod -R 755 deploy/storage
+        chmod -R 755 deploy/bootstrap/cache
+        
+    - name: Deploy complete Laravel project to /laravel
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
+        local-dir: ./deploy/
+        server-dir: /laravel/
+        dangerous-clean-slate: false
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/tests/**
+          **/.env.example
+          **/README.md
+          **/public/.htaccess
