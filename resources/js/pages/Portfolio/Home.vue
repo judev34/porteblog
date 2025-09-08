@@ -39,11 +39,8 @@
               À propos de moi
             </h2>
             <p class="text-lg text-gray-600 mb-6">
-              Développeur web passionné avec une expertise en technologies modernes. 
-              Je crée des solutions web innovantes et performantes qui répondent aux besoins spécifiques de mes clients.
-            </p>
-            <p class="text-lg text-gray-600 mb-8">
-              Spécialisé dans le développement full-stack avec Laravel, Vue.js, et les technologies web modernes.
+              Développeur full-stack spécialisé dans la conception et l'optimisation de solutions SaaS haute performance. Mon expérience couvre aussi bien la modernisation d'apps web (refactoring de legacy), que la création de projets from scratch.
+Intervenant sur tout le cycle de vie applicatif, du back-end au front-end, je m'appuie sur les pratiques DevOps (Docker, CI/CD) et design patterns pour garantir un code performant, sécurisé et maintenable.
             </p>
             <Link
               :href="route('parcours')"
@@ -66,7 +63,7 @@
                       <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                     </svg>
                   </div>
-                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Développement Full Stack</span>
+                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Framework Symfony / Laravel</span>
                 </li>
                 <li class="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <div class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center mr-4 group-hover/item:rotate-12 group-hover/item:scale-110 transition-all duration-300">
@@ -74,7 +71,7 @@
                       <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                     </svg>
                   </div>
-                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Laravel & Vue.js</span>
+                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Vue.js / Typescript</span>
                 </li>
                 <li class="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <div class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center mr-4 group-hover/item:rotate-12 group-hover/item:scale-110 transition-all duration-300">
@@ -82,7 +79,7 @@
                       <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                     </svg>
                   </div>
-                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Design Responsive</span>
+                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Base de données MySQL / PostgreSQL</span>
                 </li>
                 <li class="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <div class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center mr-4 group-hover/item:rotate-12 group-hover/item:scale-110 transition-all duration-300">
@@ -90,7 +87,7 @@
                       <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                     </svg>
                   </div>
-                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Optimisation Performance</span>
+                  <span class="text-lg font-semibold group-hover/item:text-yellow-200 transition-colors duration-300">Git / Docker / CI/CD</span>
                 </li>
               </ul>
             </div>
@@ -99,7 +96,7 @@
       </div>
     </section>
 
-    <!-- Services - Aperçu -->
+    <!-- Services - Aperçu
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
@@ -151,7 +148,7 @@
           </Link>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
     <section class="py-16 bg-blue-600">

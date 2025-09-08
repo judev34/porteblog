@@ -15,7 +15,7 @@
       variant="default" 
       size="xl" 
       title="🎆 Mon Évolution Professionnelle"
-      subtitle="Chaque étape a forgé mon expertise et nourri ma passion pour l'innovation technologique"
+      subtitle=""
     >
       <div class="max-w-4xl mx-auto">
         <div class="relative">
@@ -152,10 +152,8 @@
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">TypeScript</span>
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">JavaScript</span>
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">jQuery</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">AJAX</span>
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">HTML5</span>
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">CSS3</span>
-              <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">SASS/SCSS</span>
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">Bootstrap</span>
               <span class="bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 px-2 py-1 rounded text-xs font-medium">TailwindCSS</span>
             </div>
@@ -183,6 +181,7 @@
               <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">Twig</span>
               <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">API REST</span>
               <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">POO</span>
+              <span class="bg-gradient-to-r from-green-100 to-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">Design Patterns</span>
             </div>
             <p class="text-gray-600 text-xs leading-relaxed">
               Architecture robuste avec Symfony/Laravel et bonnes pratiques POO

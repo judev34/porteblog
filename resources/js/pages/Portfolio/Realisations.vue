@@ -9,8 +9,7 @@
           </h1>
           <p class="text-xl md:text-3xl lg:text-4xl text-purple-100 max-w-4xl mx-auto font-light tracking-wide">
             Découvrez une sélection de 
-            <span class="font-bold text-white underline decoration-pink-300 decoration-4">projets</span> 
-            que j'ai développés avec <span class="font-bold text-white underline decoration-purple-300 decoration-4">passion</span> et expertise
+            <span class="font-bold text-white underline decoration-pink-300 decoration-4">projets personnels</span>
           </p>
         </div>
       </div>
@@ -85,6 +84,74 @@
                 <a href="#" class="text-gray-500 hover:text-gray-700">
                   Code source
                 </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 - FriendsApp -->
+          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-teal-200">
+            <div class="h-64 bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center group-hover:from-teal-600 group-hover:to-emerald-700 transition-all duration-300 relative overflow-hidden">
+              <div class="text-white text-center z-10">
+                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2h-3M5 21a2 2 0 01-2-2V7a2 2 0 012-2h3" />
+                </svg>
+                <p class="text-lg font-semibold">Application API First</p>
+              </div>
+              <div class="absolute top-4 right-4">
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">🔥 API First</span>
+              </div>
+              <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-6 left-6 w-8 h-8 bg-white rounded-full animate-pulse"></div>
+                <div class="absolute bottom-8 right-10 w-5 h-5 bg-white rounded-full animate-bounce"></div>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
+                🤝 Gestion d’événements & inscriptions
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Application centrée API pour créer, publier et gérer des événements, avec un système d’inscription complet (confirmation/annulation, liste d’attente), documentation OpenAPI et tests automatisés. Stack moderne basée sur Symfony (PHP 8.2), Doctrine ORM et MySQL, packagée avec Docker pour un onboarding rapide.
+              </p>
+              <div class="mb-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Fonctionnalités principales :</h4>
+                <ul class="text-sm text-gray-600 space-y-1">
+                  <li>• <strong>Gestion des événements</strong> : création, mise à jour, publication, suppression</li>
+                  <li>• <strong>Inscriptions</strong> : inscription, confirmation/annulation, listes confirmed/waitlist</li>
+                  <li>• <strong>Ticket public</strong> : accès par code de ticket</li>
+                  <li>• <strong>Authentification</strong> : inscription, connexion, “me”, déconnexion</li>
+                  <li>• <strong>Emails transactionnels</strong> : templates Twig (ex. annulation)</li>
+                  <li>• <strong>API documentée</strong> : OpenAPI (Nelmio), Postman, Bruno</li>
+                  <li>• <strong>Tests</strong> : 47 tests (191 assertions) couvrant Auth/Events/Registrations</li>
+                </ul>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Symfony</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">PHP 8.2</span>
+                <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm">Doctrine ORM</span>
+                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">MySQL 8</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Twig</span>
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">OpenAPI</span>
+                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">PHPUnit</span>
+                <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm">Docker</span>
+                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Bruno</span>
+                <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">Postman</span>
+              </div>
+              <div class="bg-teal-50 border-l-4 border-teal-400 p-3 rounded mb-4">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-teal-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm text-teal-700">
+                      <strong>Impact</strong> — Simplifie la gestion d’événements et des inscriptions pour les organisateurs, réduit les frictions côté participant et assure qualité et confiance via tests et documentation API.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-gray-700">Code source</a>
               </div>
             </div>
           </div>
@@ -167,81 +234,11 @@
               </div>
             </div>
           </div>
-
-          <!-- Projet 3 - À personnaliser -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <div class="h-64 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
-              <div class="text-white text-center">
-                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-                <p class="text-lg font-semibold">Capture d'écran à venir</p>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
-                📚 Plateforme de Formation
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Système de gestion d'apprentissage (LMS) avec cours en ligne, suivi de progression, 
-                quiz interactifs et certificats. Interface moderne et intuitive pour les apprenants.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Laravel</span>
-                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
-                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Video.js</span>
-                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-              </div>
-              <div class="flex space-x-4">
-                <a href="#" class="text-orange-600 hover:text-orange-800 font-semibold">
-                  Voir le projet →
-                </a>
-                <a href="#" class="text-gray-500 hover:text-gray-700">
-                  Code source
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Projet 4 - À personnaliser -->
-          <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transform transition-all duration-500 ease-out border-2 border-transparent hover:border-indigo-200">
-            <div class="h-64 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center group-hover:from-indigo-600 group-hover:to-purple-700 transition-all duration-300">
-              <div class="text-white text-center">
-                <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-                <p class="text-lg font-semibold">Capture d'écran à venir</p>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
-                💬 Plateforme de Chat
-              </h3>
-              <p class="text-gray-600 mb-4">
-                Application de messagerie en temps réel avec salles de discussion, partage de fichiers, 
-                notifications push et interface responsive. Utilisation de WebSockets pour la communication instantanée.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Laravel</span>
-                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
-                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">WebSockets</span>
-                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Redis</span>
-              </div>
-              <div class="flex space-x-4">
-                <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">
-                  Voir le projet →
-                </a>
-                <a href="#" class="text-gray-500 hover:text-gray-700">
-                  Code source
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Technologies Section -->
+    <!-- Technologies Section
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
@@ -292,7 +289,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- CTA Section -->
     <section class="py-16 bg-purple-600">

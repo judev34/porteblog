@@ -47,9 +47,7 @@ jobs:
       
     - name: Optimize Laravel for preprod
       run: |
-        php artisan config:cache
         php artisan route:cache
-        php artisan view:cache
 
     - name: Build assets
       run: npm run build
