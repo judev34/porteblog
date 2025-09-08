@@ -33,7 +33,7 @@
               </div>
               <div class="lg:col-span-3">
                 <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
-                  🔒 Développeur Full Stack - Solutions Cybersécurité
+                  🔒 Développeur Full Stack - ZIWIT
                 </h3>
                 <p class="text-gray-600 mb-4">
                   Développement et maintenance de solutions de cybersécurité pour entreprises TPE/PME et grands groupes. 
@@ -60,22 +60,19 @@
                     <div>
                       <h5 class="font-medium text-gray-800 mb-2">Langages & Frameworks</h5>
                       <div class="flex flex-wrap gap-1">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Symfony 4</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Symfony</span>
                         <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">jQuery</span>
                         <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">MySQL</span>
                         <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Vue.js</span>
                         <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-xs">TailwindCSS</span>
                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
                         <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">JavaScript</span>
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Nest.js</span>
                       </div>
                     </div>
                     <div>
                       <h5 class="font-medium text-gray-800 mb-2">Outils & Méthodologies</h5>
                       <div class="flex flex-wrap gap-1">
                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Git</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Markdown</span>
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Agile (SCRUM, XP, Kanban)</span>
                         <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Linux</span>
                         <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Debian</span>
                         <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Nginx</span>
@@ -103,7 +100,7 @@
               </div>
               <div class="lg:col-span-3">
                 <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
-                  📚 Développeur Full Stack - Plateforme E-learning
+                  📚 Développeur Full Stack - Learnybox
                 </h3>
                 <p class="text-gray-600 mb-4">
                   Développement d'une plateforme E-learning complète pour entrepreneurs et solopreneurs souhaitant diffuser leurs 
@@ -187,7 +184,7 @@
               </div>
               <div class="lg:col-span-3">
                 <h3 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent group-hover:scale-105 transform transition-all duration-300">
-                  🎓 Développeur Full Stack Junior - ERP Formation
+                  🎓 Développeur Full Stack Junior - Progi-Charles
                 </h3>
                 <p class="text-gray-600 mb-4">
                   <strong>Première expérience professionnelle</strong> au sein d'une entreprise spécialisée dans les formations à distance 
@@ -228,21 +225,16 @@
                     <div>
                       <h5 class="font-medium text-gray-800 mb-2">Langages & Frameworks</h5>
                       <div class="flex flex-wrap gap-1">
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Laravel</span>
-                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">PHP 7</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Alpine.js</span>
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Livewire</span>
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Symfony</span>
                         <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">MySQL</span>
                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
                         <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded text-xs">TailwindCSS</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Markdown</span>
                       </div>
                     </div>
                     <div>
                       <h5 class="font-medium text-gray-800 mb-2">Systèmes & Outils</h5>
                       <div class="flex flex-wrap gap-1">
                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Linux</span>
-                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Ubuntu</span>
                         <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">GitLab</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">VSCode</span>
                         <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Trello</span>

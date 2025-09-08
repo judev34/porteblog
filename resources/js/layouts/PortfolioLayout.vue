@@ -227,7 +227,7 @@ const navigation = [
   { name: 'Mon Parcours', route: 'parcours' },
   { name: 'Expériences', route: 'experiences' },
   { name: 'Réalisations', route: 'realisations' },
-  { name: 'Services', route: 'services' },
+  // { name: 'Services', route: 'services' }, // En standby
   { name: 'Contact', route: 'contact' }
 ]
 
