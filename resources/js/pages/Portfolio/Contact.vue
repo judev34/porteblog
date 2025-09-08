@@ -3,30 +3,11 @@
     <!-- Hero Section -->
     <SectionContainer 
       variant="hero" 
-      size="xl" 
+      size="lg" 
       title="💬 Contactez-moi"
       subtitle="Discutons de votre projet et créons ensemble quelque chose d'exceptionnel"
       :pattern="true"
     >
-      <div class="flex justify-center mt-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
-            <div class="text-4xl mb-3">💬</div>
-            <p class="text-lg font-semibold text-white mb-1">Discussion</p>
-            <p class="text-blue-200 text-sm">Parlons de vos besoins</p>
-          </div>
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
-            <div class="text-4xl mb-3">⚡</div>
-            <p class="text-lg font-semibold text-white mb-1">Réactivité</p>
-            <p class="text-blue-200 text-sm">Réponse sous 24h</p>
-          </div>
-          <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center hover:scale-105 transition-all duration-500">
-            <div class="text-4xl mb-3">🎆</div>
-            <p class="text-lg font-semibold text-white mb-1">Collaboration</p>
-            <p class="text-blue-200 text-sm">Projet sur mesure</p>
-          </div>
-        </div>
-      </div>
     </SectionContainer>
 
     <!-- Contact Section -->
@@ -50,41 +31,19 @@
             </template>
             
             <div class="space-y-4">
-              <p class="text-gray-600 leading-relaxed">
+              <!-- <p class="text-gray-600 leading-relaxed">
                 📧 <strong>Contact direct et professionnel</strong> pour discuter de vos projets, 
                 obtenir un devis ou poser vos questions techniques.
-              </p>
+              </p> -->
               
               <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-4">
                 <p class="font-bold text-blue-800 text-lg mb-1">julien.coudert34@gmail.com</p>
-                <p class="text-sm text-blue-600">⚡ Réponse garantie sous 24h</p>
+                <!-- <p class="text-sm text-blue-600">⚡ Réponse garantie sous 24h</p> -->
               </div>
             </div>
           </AnimatedCard>
 
-          <!-- Téléphone -->
-          <AnimatedCard variant="glass" size="lg" emoji="📱" title="Téléphone">
-            <template #icon>
-              <div class="w-16 h-16 bg-gradient-to-r from-green-100 to-green-200 rounded-xl flex items-center justify-center">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
-              </div>
-            </template>
-            
-            <div class="space-y-4">
-              <p class="text-gray-600 leading-relaxed">
-                📞 <strong>Appel direct pour échanger</strong> rapidement sur votre projet, 
-                clarifier vos besoins ou planifier une rencontre.
-              </p>
-              
-              <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4">
-                <p class="font-bold text-green-800 text-lg mb-1">+33 6 XX XX XX XX</p>
-                <p class="text-sm text-green-600">🕰️ Disponible du lundi au vendredi, 9h-18h</p>
-              </div>
-            </div>
-          </AnimatedCard>
-
+          
           <!-- Réseaux Sociaux -->
           <AnimatedCard variant="glass" size="lg" emoji="🌐" title="Réseaux Sociaux">
             <template #icon>
@@ -95,12 +54,7 @@
               </div>
             </template>
             
-            <div class="space-y-4">
-              <p class="text-gray-600 leading-relaxed">
-                🔗 <strong>Suivez mon actualité professionnelle</strong> et découvrez mes dernières réalisations 
-                sur les réseaux sociaux.
-              </p>
-              
+            <div class="space-y-4">              
               <div class="flex space-x-4">
                 <a href="https://www.linkedin.com/in/julien-coudert-034" 
                    class="group flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg p-3 transition-all duration-200">
